@@ -27,3 +27,7 @@ data "aws_ami" "ami" {
       "Centos-7-DevOps-Practice"]
   }
 }
+
+provider "aws" {
+  region = "us-east-1"
+}
