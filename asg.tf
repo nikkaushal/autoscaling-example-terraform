@@ -17,11 +17,13 @@ resource "aws_launch_template" "asg" {
 }
 
 data "aws_ami" "ami" {
-  most_recent         = true
-  owners              = ["973714476881"]
+  most_recent = true
+  owners = [
+    "973714476881"]
 
   filter {
-    name   = "name"
-    values = ["Centos-7-DevOps-Practice"]
+    name = "name"
+    values = [
+      "Centos-7-DevOps-Practice"]
   }
-
+}
